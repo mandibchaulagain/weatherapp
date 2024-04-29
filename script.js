@@ -7,12 +7,27 @@ const locationElement = document.getElementById('location');
 const temperatureElement = document.getElementById('temperature');
 const descriptionElement = document.getElementById('description');
 
-searchButton.addEventListener('click', () => {
+// Assuming you have defined 'searchButton', 'locationInput', and 'fetchWeather' elsewhere in your code
+
+// Function to fetch weather data
+function handleSearch() {
     const location = locationInput.value;
     if (location) {
         fetchWeather(location);
     }
+}
+
+// Add event listener for click event
+searchButton.addEventListener('click', handleSearch);
+
+// Add event listener for keypress event
+locationInput.addEventListener('keypress', function(event) {
+    // Check if the key pressed is Enter (key code 13)
+    if (event.key === 'Enter') {
+        handleSearch();
+    }
 });
+
 
 function fetchWeather(location) {
     const url = `${apiUrl}?q=${location}&appid=${apiKey}&units=metric`;
