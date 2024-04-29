@@ -21,7 +21,7 @@ function handleSearch() {
 searchButton.addEventListener('click', handleSearch);
 
 // Add event listener for keypress event
-locationInput.addEventListener('keypress', function(event) {
+locationInput.addEventListener('keypress', (event)=> {
     // Check if the key pressed is Enter (key code 13)
     if (event.key === 'Enter') {
         handleSearch();
