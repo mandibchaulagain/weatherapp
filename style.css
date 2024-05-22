@@ -1,35 +1,45 @@
-body{
-    font-family: Arial,sans-serif;
-    background-color: #f0f0f0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f7fc; /* Soft sky blue */
 }
-.container{
-    max-width : 400px;
+
+.container {
+    max-width: 400px;
     margin: 0 auto;
-    text-align : center;
+    text-align: center;
     padding: 20px;
-    background-color : rgba(255,255,255,0.5);
-    border-radius : 10px;
-    box-shadow : 0 0 10px rgba(0, 0, 0, 0.3);
-    margin-top : 105px;
+    background-color: #ffffff; /* White */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 105px;
 }
-h1{
+
+h1 {
     font-size: 24px;
+    color: #333333; /* Dark gray */
 }
-input[type="text"]{
-    width: 100%;
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
     padding: 10px;
-    margin: 10px -10px;
-    border : 1px solid #ccc;
+    margin: 10px 0; /* Removed negative margin */
+    border: 1px solid #cccccc; /* Light gray */
     border-radius: 5px;
+    background-color: #f0f0f0; /* Light gray */
+    color: #333333; /* Dark gray */
 }
-button{
-    background-color: #007BFF;
-    color: #fff;
+
+button {
+    background-color: #6ebfb5; /* Soft pastel blue-green */
+    color: #ffffff; /* White */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
-.weather-info{
+
+.weather-info {
     margin-top: 20px;
+    color: #666666; /* Medium gray */
 }
+
